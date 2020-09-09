@@ -9,7 +9,7 @@ setuptools.setup(
     name="fargate_with_efs",
     version="0.0.1",
 
-    description="An empty CDK Python app",
+    description="Use persistent storage with containerized workload like Fargate",
     long_description=long_description,
     long_description_content_type="text/markdown",
 
