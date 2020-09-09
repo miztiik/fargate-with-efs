@@ -115,7 +115,10 @@ In this article, we will build an architecture, similar to the one shown above -
 
     ```bash
     $ CONTENT_CREATOR_URL="https://vukwv5c41b.execute-api.us-east-1.amazonaws.com/prod/well-architected-api/create-content"
-    $ curl -X POST -H 'Content-Type: text/plain' -d 'Hello again :)' ${CONTENT_CREATOR_URL}
+    $ curl -X POST \
+           -H 'Content-Type: text/plain' \
+           -d 'Hello again :)' \
+           ${CONTENT_CREATOR_URL}
     ```
 
     _Expected Output:_
