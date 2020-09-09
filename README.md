@@ -69,7 +69,7 @@ In this article, we will build an architecture, similar to the one shown above -
       There are few resources that are prerequisites to create the EFS share. This stack will create the following resources,
 
       - A VPC to host our EFS share - _Deployed by the dependant stack `vpc-stack`_
-      - Security group for our EFS share allowing inbound `TCP` on ort `2049` from our VPC IP range
+      - Security group for our EFS share allowing inbound `TCP` on port `2049` from our VPC IP range
       - Posix user & acl `1000` - _In case you want to use OS level access restrictions, these will come in handy_
       - EFS Access Point to make it easier to mount to Lambda and apply resource level access restrictions
         - The default path for the access point is set to `/efs`
